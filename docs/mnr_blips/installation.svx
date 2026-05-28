@@ -1,0 +1,32 @@
+---
+title: Installation
+icon: fa6-solid:download
+---
+
+<script>
+    import { MonarchSteps, MonarchStep } from '$lib/svx-components';
+</script>
+
+<MonarchSteps>
+
+<MonarchStep title="Download">
+Download the resource (main or release) from our GitHub.
+</MonarchStep>
+
+<MonarchStep title="Extract">
+Extract the `.zip` file into your server resources folder.
+</MonarchStep>
+
+<MonarchStep title="Resource Name">
+Make sure the resource name is `mnr_blips` to make it work properly.
+</MonarchStep>
+
+<MonarchStep title="Dependencies">
+
+```ini title="server.cfg"
+ensure mnr_blips
+```
+
+</MonarchStep>
+
+</MonarchSteps>

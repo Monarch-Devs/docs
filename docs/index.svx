@@ -1,0 +1,13 @@
+---
+title: Documentation
+description: Welcome to Monarch Devs documentation
+icon: fa6-solid:book-open
+---
+
+<script>
+    import { SectionTOC } from '$lib/svx-components';
+</script>
+
+This is the official Monarch Devs documentation.
+
+<SectionTOC />

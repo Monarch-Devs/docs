@@ -1,0 +1,13 @@
+---
+title: Labs
+description: Welcome to Monarch Devs labs
+icon: fa6-solid:flask
+---
+
+<script>
+    import { SectionTOC } from '$lib/svx-components';
+</script>
+
+Monarch Devs labs project
+
+<SectionTOC />

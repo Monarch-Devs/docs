@@ -1,0 +1,98 @@
+---
+title: Client
+icon: fa6-solid:user
+---
+
+## Blip Class
+
+### Import
+
+Before use the class and its functions you must import the file in the script where you want to use it in this way:
+
+```lua title="fxmanifest.lua"
+-- OTHER CODE --
+
+lua54 'yes'
+
+-- OTHER CODE --
+
+client_scripts {
+  '@mnr_blips/init.lua',
+  -- 'client/*.lua'
+}
+
+-- OTHER CODE --
+```
+
+---
+
+## Blip Constructor
+
+The blip can be created in this way:
+
+```lua title="Example"
+local blip = Blip:new({
+    label = "Example Blip",
+    coords = vec3(0.0, 0.0, 0.0),
+    display = 2,
+    sprite = 93,
+    color = 0,
+    alpha = 255,
+    scale = 0.8,
+})
+```
+
+### Constructor Parameters
+
+- **Blip Options:** `table`
+  - **label?**: `string` — The name of the blip displayed on the map.
+  - **coords**: `vector3` — Position where the blip will appear.
+  - **display?**: `number` (default: 2)
+    - 0 = Hidden
+    - 2 = Map & Minimap (Selectable)
+    - 3 = Map Only
+    - 5 = Minimap Only
+    - 8 = Map & Minimap (Not Selectable)
+  - **sprite?**: `number` — Icon of the blip.
+  - **color?**: `number` — Color of the blip.
+  - **alpha?**: `number` — Transparency (0 = transparent, 255 = opaque)
+  - **scale?**: `number` — Size of the blip (e.g. 0.8 = smaller)
+  - **range?**: `boolean` (default: true) — If enabled, blip appears only when the player is nearby.
+
+---
+
+## Methods
+
+### Blip:label()
+
+Changes the label of an existing blip.
+
+```lua
+blip:label("New Blip Name")
+```
+
+**Parameters:**
+- `text`: `string` — The new label to display.
+
+---
+
+### Blip:move()
+
+Moves the blip to new coordinates, useful when updating dynamic objects or tracking moving entities.
+
+```lua
+Blip:move(vec3(200.0, 200.0, 200.0))
+```
+
+**Parameters:**
+- `coords`: `vector3` — New position.
+
+---
+
+### Blip:delete()
+
+Removes the blip from the map, once deleted, the blip handle becomes `nil` and the object can be deleted.
+
+```lua
+Blip:delete()
+```
