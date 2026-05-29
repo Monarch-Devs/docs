@@ -6,12 +6,10 @@ tags: ["fivem", "blips", "standalone"]
 ---
 
 <script>
-    import { ReleaseImage, MetricsCard, MonarchCallout } from '$lib/svx-components';
+    import { ResourceCard, Callout } from '$lib/svx-components';
 </script>
 
-<ReleaseImage resource="mnr_blips" tags={["fivem", "standalone"]} />
-
-<MetricsCard resource="mnr_blips" />
+<ResourceCard resource="mnr_blips" />
 
 Monarch Blips is an optimized and simple script for blips management that can be used also as utility dependency
 
@@ -26,7 +24,7 @@ Monarch Blips is an optimized and simple script for blips management that can be
 | Average       | 0.00 ms       | 0.00%      | 0.00 ms              | ~ 250 KiB+    | -                 |
 | Max           | 0.00 ms       | 0.00%      | 0.00 ms              | ~ 250 KiB+    | -                 |
 
-<MonarchCallout type="note" title="Note">
+<Callout type="note" title="Note">
 
 These values ​​are purely indicative, performance tested with:
 
@@ -36,23 +34,23 @@ These values ​​are purely indicative, performance tested with:
 - **SSD:** Samsung 970 EVO+ 1TB
 - **VGA:** Sapphire AMD RX6600XT Nitro+
 
-</MonarchCallout>
+</Callout>
 
 ## FiveM Curiosities
 
 ### Unique named blips [LIMIT]
 
-<MonarchCallout type="warning" title="Problem">
+<Callout type="warning" title="Problem">
 
 FiveM has a limit for the map side menu, in fact the blips with unique name cannot exceed 99 slots, beyond that limit the blips will start to function badly (the menu will not be displayed correctly or the blips will not be selectable as expected)
 
-</MonarchCallout>
+</Callout>
 
-<MonarchCallout type="tip" title="Solution">
+<Callout type="tip" title="Solution">
 
 To avoid incurring the limit as well as not exceeding 99 blips with different names it is advisable to collect as many blips as possible under a single general name that will collect them all in a single name slot
 Example:
 - Paleto Store --> Store
 - Sandy Store --> Store
 
-</MonarchCallout>
+</Callout>
