@@ -1,9 +1,32 @@
 ---
-title: Chapter 1
-description: Chapter 1
-icon: fa6-solid:book
+title: Chapter 1 - Analysis
+icon: fa6-solid:book-bookmark
 ---
 
-## Chapter 1
+<script>
+    import { Callout } from '$lib/svx-components';
+</script>
 
-Test description
+## Step 1 - Questions
+The first thing to do when you are creating a script is to ask yourself some fundamental questions to avoid the creation being yet another useless thing that everyone does:
+- Is useful for community?
+- Are there other scripts of the same type?
+- What am I adding new?
+- Are other developers exploiting the lack of this to make money?
+- How many servers could use it?
+
+## Step 2 - Market Analysis
+If after the previous questions you have a script idea now it's time to analyze the market, so essentially we'll need to:
+- Look at as many scripts as possible similar to ours.
+- Understand if anything is missing and what can be added.
+- Forget the scripts we've seen before and create something original.
+- Study the collection of functions and dependencies the script needs to function and choose the most optimized ones (the fewer, the better).
+
+## Step 3 - Think and Structure
+After the previous steps you should already have an idea in mind of how the script will be so it's time to put into practice what we have thought and note down choices, functions and characteristic points of the structure, these will be fundamental and to always follow during the creation and writing of the code.
+
+<Callout type="note" title="Suggestion">
+
+    Thinking about a script is essential. Give it the right amount of importance and never start without a clear idea in mind. Always remember that for every 10 hours you work on a script, 8 are spent thinking and 2 writing.
+
+</Callout>

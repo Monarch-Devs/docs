@@ -8,6 +8,8 @@ icon: fa6-solid:flask
     import { SectionTOC } from '$lib/svx-components';
 </script>
 
-Monarch Devs labs project
+Monarch Labs is a project created with the aim of starting an increasingly strong process of information sharing for the acquisition of new development skills among server owners to create the new generation of future developers and to have more members who can create free scripts for the community as the majority of developers are reluctant to give up their name in the resources for a greater goal.
+
+_Below you will find a guide divided into chapters that will give many interesting insights useful for developing a resource_
 
 <SectionTOC />
