@@ -1,0 +1,38 @@
+---
+title: Monarch Elevators
+description: Optimized elevators management script
+icon: fa6-solid:table-columns
+---
+
+<script>
+    import { ResourceCard, Callout } from '$lib/svx-components';
+</script>
+
+Monarch Elevators is an optimized and simple script for the management of elevators in your FiveM server.
+
+<ResourceCard resource="mnr_elevators" />
+
+## Features
+- ox_lib context menu & textui
+- Optimized one-time loading for elevators
+- Floors access locked with jobs or items
+- [NEW] Multiple zones for each floor without make multiple elevators configs
+
+## Performance
+
+| **SITUATION**  | **CPU msec** | **Time** | **CPU (inclusive)** | **Memory**  | **Streaming** |
+| -------------- | ------------ | -------- | ------------------- | ----------- | ------------- |
+| Average        | 0.00 ms      | 0.00%    | 0.00 ms             | ~ 530 KiB+  | -             |
+| Max            | 0.01 ms      | 6.96%    | 0.01 ms             | ~ 950 KiB+  | -             |
+
+<Callout type="note" title="Note">
+
+These values ​​are purely indicative, performance tested with:
+
+- **CPU:** AMD Ryzen 5 5600X
+- **MOBO:** Asus Rog Strix B550 E-Gaming
+- **RAM:** Crucial Ballistix 2x8GB CL16 3600MHz
+- **SSD:** Samsung 970 EVO+ 1TB
+- **VGA:** Sapphire AMD RX6600XT Nitro+
+
+</Callout>

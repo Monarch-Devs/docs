@@ -1,0 +1,35 @@
+---
+title: Installation
+icon: fa6-solid:download
+---
+
+<script>
+    import { Steps, Step } from '$lib/svx-components';
+</script>
+
+<Steps>
+
+<Step title="Download">
+Download the resource (main or release) from our GitHub.
+</Step>
+
+<Step title="Extract">
+Extract the `.zip` file into your server resources folder.
+</Step>
+
+<Step title="Resource Name">
+Make sure the resource name is `mnr_elevators` to make it work properly.
+</Step>
+
+<Step title="Dependencies">
+
+```ini title="server.cfg"
+ensure ox_lib
+ensure (FRAMEWORK)
+ensure (INVENTORY)
+ensure mnr_elevators
+```
+
+</Step>
+
+</Steps>
